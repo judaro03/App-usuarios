@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="titulo">Albumes</h3>
+    </div>
+</div>
+<div class="body">
+    <div class="tarjetas">
+        <mat-spinner *ngIf="loading" diameter="45" class="spinner"></mat-spinner>
+        <mat-card class="example-card" *ngFor="let album of albums | ObjToArray">
+            <mat-card-title-group>
+                <mat-card-title>Titulo: {{album["title"]}}</mat-card-title>
+                <mat-card-subtitle>UserId: {{album["userId"]}}</mat-card-subtitle>
+                <mat-card-subtitle>Id: {{album["id"]}}</mat-card-subtitle>
+                <img mat-card-sm-image src="https://colombobucaramanga.edu.co/wp-content/uploads/2013/06/cd_5_angle.jpg">
+            </mat-card-title-group>
+        </mat-card>
+    </div>
+</div>

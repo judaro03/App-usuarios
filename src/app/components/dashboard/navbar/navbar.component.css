@@ -1,0 +1,13 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.navigation-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width:756px){
+    .btn-menu{
+        display: none;
+    }
+}

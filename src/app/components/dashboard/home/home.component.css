@@ -1,0 +1,28 @@
+.body {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    box-sizing: border-box;
+  }
+  .image-responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .image-responsive:hover{
+    cursor: pointer;
+  }
+  .pd-10 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .body {
+      flex-wrap: wrap;
+    }
+  }
+  

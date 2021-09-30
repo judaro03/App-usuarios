@@ -1,0 +1,30 @@
+.body {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    box-sizing: border-box;
+    height: 90vh;
+  }
+.form{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.input-form{
+    width: 80%;
+    color: black;
+}
+.button{
+    width: 80%;
+    height: 50px;
+}

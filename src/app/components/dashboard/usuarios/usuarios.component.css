@@ -1,0 +1,38 @@
+.body {
+  padding-top: 10px;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+.filtro{
+  color:darkcyan;
+}
+.pd-10 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.titulo{
+  text-align: center;
+  color: darkcyan;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 10px;
+}
+table {
+  width: 100%;
+  margin-top: 30px;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .body {
+    flex-wrap: wrap;
+  }
+}

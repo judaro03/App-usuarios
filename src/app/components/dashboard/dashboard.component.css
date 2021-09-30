@@ -1,0 +1,21 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mad-sidenav {
+  height: 100%;
+}
+mat-sidenav {
+  width: 250px;
+}
+main {
+  padding: 10px;
+}
+.footer{
+    text-align: center;
+    color: darkcyan;
+    font-weight: bold;
+    background-color: black;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 12px;
+}
+

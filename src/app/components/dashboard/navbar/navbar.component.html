@@ -1,0 +1,31 @@
+<mat-toolbar>
+    <div fxHide.xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <span>App usuarios</span>
+
+    <span class="example-spacer"></span>
+    <button class="btn-menu" mat-button [routerLink]="['/home']">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon> Inicio
+    </button>
+    <button class="btn-menu" mat-button [routerLink]="['/users']">
+        <mat-icon aria-hidden="false" aria-label="Example user icon">people</mat-icon>Usuarios
+    </button>
+    <button class="btn-menu" mat-button [routerLink]="['/posts']">
+        <mat-icon aria-hidden="false" aria-label="Example post icon">contacts</mat-icon> Publicaciones
+    </button>
+    <button class="btn-menu" mat-button [routerLink]="['/albums']">
+        <mat-icon aria-hidden="false" aria-label="Example album icon">account_box</mat-icon> Álbumes
+    </button>
+
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon btn-menu"
+        aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon btn-menu" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
