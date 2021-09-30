@@ -33,3 +33,9 @@
     margin-bottom: 8px;
     margin-right: 30px;
   }
+  @media screen and (max-width: 468px) {
+    .example-card {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  }
