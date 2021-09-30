@@ -17,7 +17,7 @@ export class PublicacionesComponent implements OnInit {
     private _snackBar: MatSnackBar
   ) {
     this.form = this.fb.group({
-      id: ['', Validators.required],
+      identificador: ['', Validators.required],
       titulo: ['', Validators.required],
       cuerpo: ['', Validators.required],
     });
@@ -25,10 +25,9 @@ export class PublicacionesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAllPosts();
   }
   guardar(): void {
-    const id = this.form.value.id;
+    const id = this.form.value.identificador;
     const titulo = this.form.value.titulo;
     const cuerpo = this.form.value.cuerpo;
     console.log(cuerpo);
@@ -38,7 +37,7 @@ export class PublicacionesComponent implements OnInit {
     this.postService.getAllPosts().subscribe((posts) => {
       console.log(posts);
       this.posts=posts;
-    });
+  });
   }
   getPost() {
     this.postService.getPost(this.form.value.id).subscribe((post) => {
@@ -55,15 +54,16 @@ export class PublicacionesComponent implements OnInit {
   }
   createPost() {
     if (this.validate()) {
+      console.log(this.form.value.identificador);
       const post = {
-        userId: this.form.value.id,
+        userId: this.form.value.identificador,
         title: this.form.value.titulo,
         body: this.form.value.cuerpo,
       };
       this.postService.createPost(post).subscribe((newPost) => {
         console.log(newPost);
         this.form = this.fb.group({
-          id: ['', Validators.required],
+          identificador: ['', Validators.required],
           titulo: ['', Validators.required],
           cuerpo: ['', Validators.required],
         });
@@ -72,7 +72,7 @@ export class PublicacionesComponent implements OnInit {
     }
   }
   validate(): boolean {
-    if ((this.form.value.id = '')) {
+    if ((this.form.value.identificador == '')) {
       this.openSnackBar('Por favor ingrese un id', 'Cerrar');
       return false;
     }
