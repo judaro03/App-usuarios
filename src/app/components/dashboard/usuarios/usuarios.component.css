@@ -1,4 +1,6 @@
 .body {
+  width: 100%;
+  overflow-x: auto;
   padding-top: 10px;
   padding-bottom: 100px;
   justify-content: center;
@@ -34,5 +36,11 @@ table {
 @media screen and (max-width: 768px) {
   .body {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 320px) {
+  table {
+    display: block;
+    overflow-x: auto;
   }
 }
